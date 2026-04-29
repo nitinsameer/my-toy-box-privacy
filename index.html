@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – ToyJoy Box</title>
+<meta name="description" content="Privacy Policy for ToyJoy Box – a safe, ad-free toy organizer app designed for children ages 3–8.">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --coral: #E8524A;
+    --coral-light: #FFF0EF;
+    --coral-mid: #FADBD8;
+    --dark: #1A1A2E;
+    --gray: #555;
+    --gray-light: #F8F8F8;
+    --border: #E8E8E8;
+    --green: #27AE60;
+    --white: #fff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #FAFAFA;
+    color: var(--dark);
+    line-height: 1.7;
+  }
+
+  /* ── HERO HEADER ── */
+  .hero {
+    background: linear-gradient(135deg, #E8524A 0%, #C0392B 100%);
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 400px; height: 400px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    top: -150px; right: -80px;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 300px; height: 300px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    bottom: -100px; left: -60px;
+  }
+  .hero-icon {
+    font-size: 72px;
+    display: block;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+  }
+  .hero h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(28px, 6vw, 48px);
+    color: white;
+    margin-bottom: 8px;
+  }
+  .hero .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .badge {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+  }
+
+  /* ── SUMMARY STRIP ── */
+  .summary-strip {
+    background: white;
+    border-bottom: 2px solid var(--border);
+    padding: 0;
+  }
+  .summary-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .summary-item {
+    padding: 20px 16px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .summary-item:last-child { border-right: none; }
+  .summary-item .s-icon { font-size: 26px; margin-bottom: 4px; }
+  .summary-item .s-label { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 2px; }
+  .summary-item .s-val { font-size: 14px; font-weight: 800; color: var(--dark); }
+  .summary-item .s-val.green { color: var(--green); }
+  .summary-item .s-val.red { color: var(--coral); }
+
+  /* ── MAIN LAYOUT ── */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    margin-bottom: 48px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--coral-mid);
+  }
+  .section-num {
+    background: var(--coral);
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 8px rgba(232,82,74,0.3);
+  }
+  .section-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    color: var(--dark);
+  }
+  .section-emoji { font-size: 22px; }
+
+  p { margin-bottom: 12px; font-size: 15px; color: var(--gray); }
+
+  /* ── HIGHLIGHT BOX ── */
+  .highlight {
+    background: var(--coral-light);
+    border-left: 5px solid var(--coral);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  .highlight.green {
+    background: #EAFAF1;
+    border-left-color: var(--green);
+    color: #1A5C30;
+  }
+
+  /* ── BULLET LIST ── */
+  ul.policy-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+  }
+  ul.policy-list li {
+    padding: 8px 0 8px 32px;
+    position: relative;
+    font-size: 15px;
+    color: var(--gray);
+    border-bottom: 1px solid var(--border);
+  }
+  ul.policy-list li:last-child { border-bottom: none; }
+  ul.policy-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--coral);
+    font-weight: 900;
+    font-size: 14px;
+  }
+  ul.policy-list li strong { color: var(--dark); }
+
+  /* ── INFO TABLE ── */
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .info-table tr:nth-child(odd) { background: var(--gray-light); }
+  .info-table tr:nth-child(even) { background: white; }
+  .info-table td {
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .info-table td:first-child {
+    font-weight: 800;
+    color: var(--coral);
+    width: 38%;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .info-table td:last-child { color: var(--dark); font-weight: 600; }
+  .info-table tr:last-child td { border-bottom: none; }
+
+  /* ── SUB-HEADING ── */
+  h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--dark);
+    margin: 20px 0 8px;
+  }
+
+  /* ── COMPLIANCE GRID ── */
+  .compliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .compliance-card {
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 16px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .compliance-card:hover { border-color: var(--coral); transform: translateY(-2px); }
+  .compliance-card .cc-icon { font-size: 32px; margin-bottom: 8px; }
+  .compliance-card .cc-name { font-weight: 800; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
+  .compliance-card .cc-status { font-size: 12px; font-weight: 700; color: var(--green); }
+
+  /* ── CONTACT CARD ── */
+  .contact-card {
+    background: linear-gradient(135deg, #1A1A2E, #2C2C5E);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+  }
+  .contact-card .cc-title { font-family: 'Fredoka One', cursive; font-size: 24px; margin-bottom: 8px; }
+  .contact-card p { color: rgba(255,255,255,0.75); margin-bottom: 20px; font-size: 15px; }
+  .contact-card a {
+    display: inline-block;
+    background: var(--coral);
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 14px 32px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(232,82,74,0.4);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .contact-card a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,82,74,0.5); }
+  .contact-meta { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.5); }
+
+  /* ── TOC (sidebar) ── */
+  .toc {
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .toc-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .toc ol {
+    padding-left: 20px;
+    margin: 0;
+    columns: 2;
+    column-gap: 20px;
+  }
+  .toc li {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .toc a { color: var(--coral); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  footer strong { color: rgba(255,255,255,0.8); }
+  footer a { color: var(--coral); text-decoration: none; }
+
+  /* ── EFFECTIVE DATE BAR ── */
+  .date-bar {
+    background: var(--coral-light);
+    border-bottom: 1px solid var(--coral-mid);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--coral);
+  }
+
+  @media (max-width: 600px) {
+    .toc ol { columns: 1; }
+    .summary-grid { grid-template-columns: repeat(2, 1fr); }
+    .summary-item { border-bottom: 1px solid var(--border); }
+    .info-table td:first-child { width: 44%; font-size: 12px; }
+    .contact-card { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-icon">🧸</span>
+  <h1>ToyJoy Box – Privacy Policy</h1>
+  <p class="subtitle">Safe, private, and built for little ones aged 3–8</p>
+  <div class="hero-badges">
+    <span class="badge">🇺🇸 COPPA Compliant</span>
+    <span class="badge">🇪🇺 GDPR-K Compliant</span>
+    <span class="badge">🎮 Google Play Families</span>
+    <span class="badge">🚫 Zero Ads</span>
+    <span class="badge">🔒 No Data Collected</span>
+  </div>
+</div>
+
+<!-- DATE BAR -->
+<div class="date-bar">
+  📅 Effective Date: March 23, 2026 &nbsp;|&nbsp; Developer: Nishaan Tech (Nitin &amp; Ishaan) &nbsp;|&nbsp; App: ToyJoy Box
+</div>
+
+<!-- SUMMARY STRIP -->
+<div class="summary-strip">
+  <div class="summary-grid">
+    <div class="summary-item">
+      <div class="s-icon">👤</div>
+      <div class="s-label">Personal Data</div>
+      <div class="s-val green">None Collected</div>
+    </div>
+    <div class="summary-item">
+      <div class="s-icon">📢</div>
+      <div class="s-label">Advertisements</div>
+      <div class="s-val green">None</div>
+    </div>
+    <div class="summary-item">
+      <div class="s-icon">💰</div>
+      <div class="s-label">In-App Purchases</div>
+      <div class="s-val green">None</div>
+    </div>
+    <div class="summary-item">
+      <div class="s-icon">🌐</div>
+      <div class="s-label">Internet Required</div>
+      <div class="s-val green">Offline App</div>
+    </div>
+    <div class="summary-item">
+      <div class="s-icon">🤝</div>
+      <div class="s-label">Data Sharing</div>
+      <div class="s-val green">Never</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <div class="toc-title">📋 Contents</div>
+    <ol>
+      <li><a href="#s1">Introduction</a></li>
+      <li><a href="#s2">Who This Applies To</a></li>
+      <li><a href="#s3">Data We Do NOT Collect</a></li>
+      <li><a href="#s4">Locally Stored Data</a></li>
+      <li><a href="#s5">Camera &amp; Storage</a></li>
+      <li><a href="#s6">Firebase Crashlytics</a></li>
+      <li><a href="#s7">No Advertising</a></li>
+      <li><a href="#s8">No In-App Purchases</a></li>
+      <li><a href="#s9">COPPA &amp; GDPR-K</a></li>
+      <li><a href="#s10">Data Security</a></li>
+      <li><a href="#s11">Data Retention</a></li>
+      <li><a href="#s12">External Links</a></li>
+      <li><a href="#s13">Policy Changes</a></li>
+      <li><a href="#s14">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. INTRODUCTION -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div class="section-title">Introduction <span class="section-emoji">👋</span></div>
+    </div>
+    <p>Welcome to <strong>ToyJoy Box</strong>! We are <strong>Nishaan Tech</strong>, a small developer team (Nitin &amp; Ishaan) dedicated to creating safe, joyful digital experiences for young children.</p>
+    <p>We take the privacy of children extremely seriously. This Privacy Policy explains in plain language how we handle information when your child uses ToyJoy Box. We have written this policy to comply with:</p>
+    <ul class="policy-list">
+      <li><strong>Google Play Families Policy</strong></li>
+      <li><strong>Children's Online Privacy Protection Act (COPPA)</strong> – United States</li>
+      <li><strong>General Data Protection Regulation (GDPR-K)</strong> – European Union</li>
+      <li><strong>California Consumer Privacy Act (CCPA)</strong> – California, USA</li>
+    </ul>
+    <div class="highlight green">
+      ✅ Bottom line: ToyJoy Box does NOT collect, store, or share any personal information about your child. The app is designed to be 100% private and safe.
+    </div>
+  </div>
+
+  <!-- 2. WHO THIS APPLIES TO -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div class="section-title">Who This Policy Applies To <span class="section-emoji">👨‍👩‍👧</span></div>
+    </div>
+    <p>This Privacy Policy applies to all users of ToyJoy Box, which is specifically designed for <strong>children between the ages of 3 and 8 years</strong>.</p>
+    <p>The app should always be used under parental supervision for children under 13 years of age, in accordance with COPPA requirements. If you are a parent or guardian with questions or concerns, please contact us using the information in Section 14.</p>
+  </div>
+
+  <!-- 3. DATA WE DO NOT COLLECT -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div class="section-title">Data We Do NOT Collect <span class="section-emoji">🚫</span></div>
+    </div>
+    <p>ToyJoy Box is designed with a <strong>privacy-first architecture</strong>. We do NOT collect any of the following:</p>
+    <ul class="policy-list">
+      <li><strong>Names, email addresses,</strong> or any personally identifiable information (PII)</li>
+      <li><strong>Phone numbers, home addresses,</strong> or location/GPS data</li>
+      <li><strong>Photos or videos</strong> (photos taken in-app are stored only on your device — see Section 5)</li>
+      <li><strong>Contacts</strong> or social network information</li>
+      <li><strong>Advertising identifiers</strong> (Google GAID / Apple IDFA)</li>
+      <li><strong>Behavioural profiles</strong> or usage analytics</li>
+      <li><strong>Purchase history</strong> or financial information</li>
+      <li><strong>Device identifiers</strong> beyond anonymous crash reporting</li>
+    </ul>
+    <div class="highlight">
+      🔒 Because we collect no personal data, there is nothing to sell, share, or disclose to third parties.
+    </div>
+  </div>
+
+  <!-- 4. LOCALLY STORED DATA -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <div class="section-title">Data Stored Locally on Your Device <span class="section-emoji">📱</span></div>
+    </div>
+    <p>ToyJoy Box stores toy information (names, categories, photos) <strong>exclusively on your child's device</strong>. This data:</p>
+    <ul class="policy-list">
+      <li>Never leaves the device</li>
+      <li>Is never transmitted to our servers or any third-party servers</li>
+      <li>Is only accessible within the app on that specific device</li>
+      <li>Can be deleted at any time by clearing app data or uninstalling the app</li>
+    </ul>
+    <p>Parents and guardians have full control over locally stored data through standard Android device management (<strong>Settings → Apps → ToyJoy Box → Clear Data</strong>).</p>
+  </div>
+
+  <!-- 5. CAMERA AND STORAGE -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div class="section-title">Camera &amp; Storage Permissions <span class="section-emoji">📷</span></div>
+    </div>
+
+    <h3>5.1 Purpose</h3>
+    <p>ToyJoy Box may request access to your device's camera and photo storage. These permissions are used solely to allow a child or parent to <strong>add a photo of a physical toy</strong> to the app (for example, photographing a toy car to add it to the digital toy box).</p>
+
+    <h3>5.2 How We Use These Permissions</h3>
+    <ul class="policy-list">
+      <li><strong>Camera:</strong> Used only when the user actively taps "Add Photo" to take a new picture</li>
+      <li><strong>Storage / Gallery:</strong> Used only when the user taps "Choose from Gallery" to select an existing photo</li>
+      <li>Photos are stored only on the device and are <strong>never uploaded, transmitted, or shared</strong></li>
+    </ul>
+
+    <h3>5.3 Revoking Permissions</h3>
+    <p>Permissions can be revoked at any time via <strong>Settings → Apps → ToyJoy Box → Permissions</strong>. Revoking camera or storage will simply disable the photo feature; all other app functionality continues normally.</p>
+  </div>
+
+  <!-- 6. FIREBASE CRASHLYTICS -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <div class="section-title">Crash Reporting – Firebase Crashlytics <span class="section-emoji">🛠️</span></div>
+    </div>
+
+    <h3>6.1 What It Does</h3>
+    <p>We use <strong>Google Firebase Crashlytics</strong> to improve the stability of ToyJoy Box. When the app crashes or encounters an error, Crashlytics automatically sends an anonymous technical report so we can identify and fix problems quickly.</p>
+
+    <h3>6.2 What Crashlytics Collects</h3>
+    <p>Crashlytics collects only <strong>anonymised, non-personal technical data</strong>:</p>
+    <ul class="policy-list">
+      <li>Type of crash or error</li>
+      <li>Device model and Android OS version (e.g., "Android 13")</li>
+      <li>App version number</li>
+      <li>Stack trace (technical log of where the crash occurred)</li>
+      <li>Timestamp of the crash</li>
+    </ul>
+    <div class="highlight green">
+      ✅ Crashlytics does NOT collect names, contact details, location, or any personally identifiable information. We do not link crash reports to individual users or children.
+    </div>
+
+    <h3>6.3 Google's Privacy Policy</h3>
+    <p>Firebase Crashlytics is operated by Google. You can review their privacy practices at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">firebase.google.com/support/privacy</a>.</p>
+  </div>
+
+  <!-- 7. NO ADVERTISING -->
+  <div class="section" id="s7">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <div class="section-title">No Third-Party Advertising <span class="section-emoji">🚫📢</span></div>
+    </div>
+    <p>ToyJoy Box contains <strong>NO advertisements of any kind</strong>. We do not:</p>
+    <ul class="policy-list">
+      <li>Display banner ads, interstitial ads, video ads, or sponsored content</li>
+      <li>Use advertising SDKs (such as AdMob, Meta Audience Network, etc.)</li>
+      <li>Share data with advertising networks or data brokers</li>
+      <li>Track behaviour for ad-targeting purposes</li>
+    </ul>
+    <div class="highlight green">
+      ✅ Children using ToyJoy Box will never be exposed to advertising or marketing content of any kind.
+    </div>
+  </div>
+
+  <!-- 8. NO IN-APP PURCHASES -->
+  <div class="section" id="s8">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <div class="section-title">No In-App Purchases <span class="section-emoji">💰</span></div>
+    </div>
+    <p>ToyJoy Box does not offer in-app purchases, premium subscriptions, virtual currencies, or any commercial transactions. There is <strong>no mechanism for children to spend money</strong> inside the app.</p>
+  </div>
+
+  <!-- 9. COPPA & GDPR-K -->
+  <div class="section" id="s9">
+    <div class="section-header">
+      <div class="section-num">9</div>
+      <div class="section-title">Children's Privacy – COPPA &amp; GDPR-K <span class="section-emoji">🛡️</span></div>
+    </div>
+
+    <div class="compliance-grid">
+      <div class="compliance-card">
+        <div class="cc-icon">🇺🇸</div>
+        <div class="cc-name">COPPA</div>
+        <div class="cc-status">✓ Compliant</div>
+      </div>
+      <div class="compliance-card">
+        <div class="cc-icon">🇪🇺</div>
+        <div class="cc-name">GDPR-K</div>
+        <div class="cc-status">✓ Compliant</div>
+      </div>
+      <div class="compliance-card">
+        <div class="cc-icon">🏪</div>
+        <div class="cc-name">Play Families</div>
+        <div class="cc-status">✓ Compliant</div>
+      </div>
+      <div class="compliance-card">
+        <div class="cc-icon">🌎</div>
+        <div class="cc-name">CCPA</div>
+        <div class="cc-status">✓ Addressed</div>
+      </div>
+    </div>
+
+    <h3>9.1 COPPA (United States)</h3>
+    <p>ToyJoy Box is directed at children under 13 years. We comply fully with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>. We do not knowingly collect personal information from any child. Because we collect no personal data at all, no parental consent mechanism is required. If you believe we have inadvertently collected information about your child, contact us immediately and we will delete it.</p>
+
+    <h3>9.2 GDPR-K (European Union / EEA)</h3>
+    <p>Under the GDPR, children's personal data is entitled to special protection. We comply by collecting <strong>no personal data from children</strong>. Our use of Firebase Crashlytics is based on legitimate interests (ensuring app stability) and is limited to fully anonymised technical data that cannot be linked to any individual.</p>
+
+    <h3>9.3 Parental Rights</h3>
+    <p>As a parent or guardian, you have the right to:</p>
+    <ul class="policy-list">
+      <li><strong>Review</strong> any personal data we hold about your child (we hold none)</li>
+      <li><strong>Request deletion</strong> of any data related to your child</li>
+      <li><strong>Withdraw consent</strong> at any time (consent is not required as we collect no data)</li>
+      <li><strong>Lodge a complaint</strong> with your local data protection authority</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:nitinsameer@gmail.com" style="color:var(--coral);font-weight:700;">nitinsameer@gmail.com</a>.</p>
+  </div>
+
+  <!-- 10. DATA SECURITY -->
+  <div class="section" id="s10">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-title">Data Security <span class="section-emoji">🔐</span></div>
+    </div>
+    <p>Although ToyJoy Box does not collect personal data, we take the security of locally stored toy data seriously. Data is protected by your device's own security mechanisms. We recommend:</p>
+    <ul class="policy-list">
+      <li>Keeping your Android device updated with the latest security patches</li>
+      <li>Using a screen lock (PIN, pattern, or biometric) on your device</li>
+      <li>Ensuring your child uses the app in a supervised environment</li>
+    </ul>
+  </div>
+
+  <!-- 11. DATA RETENTION -->
+  <div class="section" id="s11">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <div class="section-title">Data Retention &amp; Deletion <span class="section-emoji">🗑️</span></div>
+    </div>
+    <p>Since ToyJoy Box does not collect personal data, there is no data retained on our servers to delete. Locally stored toy data is retained on the device until:</p>
+    <ul class="policy-list">
+      <li>The user manually deletes individual toys within the app</li>
+      <li>The parent clears app data via <strong>Settings → Apps → ToyJoy Box → Clear Data</strong></li>
+      <li>The app is uninstalled from the device</li>
+    </ul>
+    <p>Crash reports sent via Crashlytics are retained per Google Firebase's own data retention policies: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">firebase.google.com/support/privacy</a>.</p>
+  </div>
+
+  <!-- 12. EXTERNAL LINKS -->
+  <div class="section" id="s12">
+    <div class="section-header">
+      <div class="section-num">12</div>
+      <div class="section-title">Links &amp; External Content <span class="section-emoji">🔗</span></div>
+    </div>
+    <p>ToyJoy Box <strong>does not contain links</strong> to external websites, social media platforms, or third-party applications. Children cannot navigate away from the app to any other website or service.</p>
+  </div>
+
+  <!-- 13. POLICY CHANGES -->
+  <div class="section" id="s13">
+    <div class="section-header">
+      <div class="section-num">13</div>
+      <div class="section-title">Changes to This Policy <span class="section-emoji">📝</span></div>
+    </div>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal compliance. When we make material changes, we will:</p>
+    <ul class="policy-list">
+      <li>Update the <strong>Effective Date</strong> shown at the top of this page</li>
+      <li>Notify users via an <strong>in-app notice</strong> on the next app launch</li>
+      <li>Update this page at <a href="https://nitinsameer.github.io/my-toy-box-privacy/" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">nitinsameer.github.io/my-toy-box-privacy/</a></li>
+    </ul>
+    <p>We encourage parents and guardians to review this policy periodically. Continued use of ToyJoy Box after any changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <!-- 14. CONTACT -->
+  <div class="section" id="s14">
+    <div class="section-header">
+      <div class="section-num">14</div>
+      <div class="section-title">Contact Us <span class="section-emoji">📬</span></div>
+    </div>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the privacy practices of ToyJoy Box, please reach out:</p>
+
+    <table class="info-table">
+      <tr><td>Developer</td><td>Nishaan Tech</td></tr>
+      <tr><td>Team</td><td>Nitin &amp; Ishaan</td></tr>
+      <tr><td>Email</td><td><a href="mailto:nitinsameer@gmail.com" style="color:var(--coral);font-weight:700;">nitinsameer@gmail.com</a></td></tr>
+      <tr><td>Policy URL</td><td><a href="https://nitinsameer.github.io/my-toy-box-privacy/" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">nitinsameer.github.io/my-toy-box-privacy/</a></td></tr>
+      <tr><td>Response Time</td><td>Within 5 business days</td></tr>
+    </table>
+
+    <div class="contact-card">
+      <div class="cc-title">Got a privacy question? 🧸</div>
+      <p>We're a small family team and we're happy to help. Drop us an email anytime.</p>
+      <a href="mailto:nitinsameer@gmail.com">✉️ nitinsameer@gmail.com</a>
+      <div class="contact-meta">We aim to respond within 5 business days</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>🧸 ToyJoy Box</strong> &nbsp;·&nbsp; Nishaan Tech (Nitin &amp; Ishaan)<br>
+  <a href="mailto:nitinsameer@gmail.com">nitinsameer@gmail.com</a><br><br>
+  This policy complies with <strong>Google Play Families Policy</strong>, <strong>COPPA</strong>, <strong>GDPR-K</strong>, and <strong>CCPA</strong>.<br>
+  © 2026 Nishaan Tech. All rights reserved.
+</footer>
+
+</body>
+</html>
